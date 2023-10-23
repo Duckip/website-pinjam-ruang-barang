@@ -62,29 +62,29 @@
     <div class="tab-content">
       <!--Pinjam Ruang-->
       <div id="home" class="tab-pane fade in active">
-        <form action="#menus" method="get">
+        <form action="ruang.php" method="post">
             <label class="form-label" for="Ruang">Ruang</label>
-            <select class="form-control" type="Ruang" id="device" required>
-        	 <option value="sumatera">Ruang Sumatera</option>
-        	 <option value="jakarta">Ruang Jakarta</option>
-			 <option value="Kalimantan">Ruang Kalimantan</option>
-        	 <option value="sulawesi">Ruang Sulawesi<noption>
-        	 <option value="papua">Ruang Papua</option>
+            <select class="form-control" type="Ruang" id="device" name="Ruang" required>
+        	 <option value="sumatera" name="ruang">Ruang Sumatera</option>
+        	 <option value="jakarta" name="ruang">Ruang Jakarta</option>
+			 <option value="Kalimantan" name="ruang">Ruang Kalimantan</option>
+        	 <option value="sulawesi" name="ruang">Ruang Sulawesi<noption>
+        	 <option value="papua" name="ruang">Ruang Papua</option>
           </select>
         
         <div class="form-group was-validated"></div>
           <label class="form-label" for="Tanggal">Tanggal</label>
-          <input type="date" class="drop" id="Tanggal" required>
+          <input type="date" class="drop" id="Tanggal" name="Tanggal" required>
           
 		<div class="form-group was-validated">
 		  <label class="form-time" for="mulai">Mulai</label>
-          <input type="time" class="drop" id="mulai" required>
+          <input type="time" class="drop" id="mulai" name="Mulai" required>
 		  <label class="form-time" for="Selesai">Selesai</label>
-          <input type="time" class="drop" id="selesai" required> 
+          <input type="time" class="drop" id="selesai" name="Selesai" required> 
 		
             <label class="form-label" for="text">Alasan Peminjaman</label>
             
-            <input class="form-control" type="text" required>
+            <input class="form-control" type="text" name="Alasan" required>
         </div>
           
           <input type="submit" name="submit" id="Button">

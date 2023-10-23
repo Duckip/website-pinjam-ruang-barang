@@ -60,29 +60,29 @@
     <!--Tabs Content-->
      <!--Tabs Content-->
      <div class="tab-content">
-      <!--Pinjam Ruang-->
+      <!--Pinjam Perangkat-->
       <div id="home" class="tab-pane fade in active">
-        <form> 
-            <label class="form-label" for="Ruang">Ruang</label>
-            <select class="form-control" type="Ruang" id="device" required>
-        	 <option value="Samsung">Samsung S22</option>
-        	 <option value="Iphone">Iphone X</option>
-			 <option value="Poco">Poco M3</option>
-        	 <option value="Oppo">Oppo Reno 5<noption>
-        	 <option value="Ipad"> Ipad 9</option>
+        <form action="perangkat.php" method="post"> 
+            <label class="form-label" for="Ruang">perangkat</label>
+            <select class="form-control" type="Ruang" id="device" name="Perangkat" required>
+        	 <option value="Samsung S22">Samsung S22</option>
+        	 <option value="Iphone 13">Iphone 13</option>
+			 <option value="Poco M4">Poco M4</option>
+        	 <option value="Oppo Reno 5">Oppo Reno 5<noption>
+        	 <option value="Ipad 9"> Ipad 9</option>
           </select>
         
         <div class="form-group was-validated">
           
 		  <label class="form-time" for="mulai">Mulai</label>
       <label class="form-label" for="awal"></label>
-      <input type="date" class="drop" id="awal" required>
+      <input type="date" class="drop" id="awal" name="Mulai" required>
       <label class="form-label" for="stop">Berakhir</label>
-      <input type="date" class="drop" id="stop" required>
+      <input type="date" class="drop" id="stop" name="Berakhir" required>
     
             <label class="form-label" for="text">Alasan Peminjaman</label>
             
-            <input class="form-control" type="text" required>
+            <input class="form-control" type="text" name="Alasan" required>
         </div>
           
           <input type="submit" name="submit" id="Button">

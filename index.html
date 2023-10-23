@@ -21,20 +21,20 @@
 
         <h1 class="text-center">Login</h1>
 
-        <form action="home.html" method="get">
+        <form action="connect.php" method="post">
             
                 <label class="form-label" for="email">Email address</label>
-                <input class="form-control" type="email" id="email" required>
+                <input class="form-control" type="email" id="email" name="email" required />
             
             
                 <label class="form-label" for="password">Password</label>
-                <input class="form-control" type="password" id="password" required>
+                <input class="form-control" type="password" id="password" name="password" required />
             
             <div class="form-group form-check">
                 <input class="form-check-input" type="checkbox" id="check">
                 <label class="form-check-label" for="check">Remember me</label>
             </div>
-            <input class="btn btn-success w-100" type="submit" value="LOGIN">
+            <input class="btn btn-success w-100" type="submit" value="LOGIN" name="">
         </form>
 
     </div>
